@@ -1,0 +1,249 @@
+.page {
+  background: #FCFCFC;
+  display: flex;
+  flex-direction: column;
+  gap: 104px;
+}
+
+/* HERO */
+.banner__one {
+  margin-top: 60px;
+  padding: 56px 56px 0 56px;
+  border-radius: 40px;
+  background: url("src/images/courses/background_1.webp");
+  background-size: 100% 100%;
+  box-shadow: 1px 2px 10px rgba(100, 100, 100, 0.08);
+
+  .title__banner {
+    font-size: 48px;
+    font-family: Gilroy, system-ui, sans-serif;
+    font-weight: 600;
+  }
+
+  p {
+    color: #6b7280;
+  }
+  .button {
+    margin-bottom: 56px;
+  }
+}
+
+.hero__mock {
+  margin-bottom: -10px;
+}
+
+/* TOOLS */
+.tools {
+  &__text {
+    color: #6F6F6F;
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+  &__num {
+    line-height: 100%;
+    margin-bottom: 32px;
+    font-size: 80px;
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    background: linear-gradient(115.86deg, rgba(255, 179, 6, 0.3) 55%, rgb(100 67 138 / 49%) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    &::after {
+      content: attr(data-text);
+      position: absolute;
+      z-index: -1;
+      background: inherit;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: blur(7.7px);
+      opacity: 1;
+    }
+  }
+  .title {
+    margin-bottom: 56px;
+  }
+  .block {
+    border-bottom: 1px solid #D9D9D9;
+  }
+}
+
+/* FEATURES */
+.feature {
+  .section__desc {
+    font-size: 16px;
+    color: #6F6F6F;
+  }
+  h2 {
+    margin-bottom: 8px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    counter-reset: item;
+    margin-top: 40px;
+    margin-bottom: 32px;
+    li {
+      color: #202020;
+      border-bottom: 1px solid #D9D9D9;
+      counter-increment: item;
+      position: relative;
+      padding-left: 54px;
+      margin-bottom: 24px;
+      padding-bottom: 18px;
+      padding-right: 90px;
+      line-height: 120%;
+      &::before {
+        content: counter(item, decimal-leading-zero);
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-weight: 500;
+        font-size: 16px;
+        color: #6F6F6F;
+      }
+    }
+    &.list__grid {
+      display: grid;
+      grid-auto-flow: column;
+      gap: 0 20px;
+      list-style: none;
+      padding: 0;
+      margin-top: 40px;
+      grid-auto-rows: minmax(0, auto);
+      grid-template-rows: repeat(2, auto);
+      margin-bottom: 0;
+      li {
+        &:nth-child(even) {
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.feature__mock {
+}
+
+.feature__mock--small {
+}
+
+.feature--reverse {
+  .row {
+    flex-direction: row-reverse;
+  }
+}
+
+.feature__boxed {
+  &__inner {
+    border-radius: 40px;
+    background: url("src/images/courses/background_1.webp");
+    background-size: 100% 100%;
+    padding: 48px;
+    position: relative;
+    box-shadow: 1px 2px 10px rgba(100, 100, 100, 0.08);
+    .button {
+      margin-top: 24px;
+    }
+    .text {
+      color: #6F6F6F;
+    }
+  }
+  &__mails {
+    border-radius: 40px;
+    background: url("src/images/courses/background_2.webp");
+    background-size: 100% 100%;
+    padding: 48px;
+    position: relative;
+    box-shadow: 1px 2px 10px rgba(100, 100, 100, 0.08);
+    .button {
+      margin-top: 24px;
+    }
+    .text {
+      color: #6F6F6F;
+    }
+  }
+}
+
+/* BUTTON */
+.btn-pill {
+  border-radius: 999px;
+  padding: 12px 32px;
+}
+
+
+
+.modal-custom {
+  border-radius: 32px;
+  padding: 48px;
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal h3 {
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  label {
+    font-size: 14px;
+    color: #6b7280;
+    margin-bottom: 6px;
+  }
+}
+
+.form-control {
+  height: 56px;
+  border-radius: 999px;
+  padding: 0 24px;
+}
+
+.custom-check {
+  margin: 24px 0;
+  color: #9ca3af;
+  display: flex;
+  font-size: 16px;
+  label {
+    margin-left: 20px;
+  }
+  input {
+    width: 24px;
+    height: 24px;
+    margin-top: 4px;
+  }
+}
+
+.btn-submit {
+  height: 56px;
+  border-radius: 999px;
+  background: #111;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* SUCCESS */
+.modal-success {
+
+}
+
+.success-icon {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fde68a, #c4b5fd);
+  margin: 40px auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #fff;
+}
