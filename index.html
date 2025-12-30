@@ -16,18 +16,21 @@
       <div class="col-lg-12 hero__content">
         <h1 class="title__banner">Инструменты для онлайн-обучения</h1>
         <p>
-          Создавайте и запускайте онлайн-курсы, превращайте заявки в покупателей, находите точки роста и масштабируйте свой проект
+          Создавайте и запускайте онлайн-курсы, превращайте заявки в покупателей, находите точки роста и масштабируйте свой проект
         </p>
       </div>
 
-      <div class="col d-flex flex-row justify-content-between align-items-end">
-        <button class="button button__gradient__border" data-bs-toggle="modal" data-bs-target="#requestModal">
+      <div class="col d-flex flex-md-row justify-content-between align-items-end flex-column">
+        <button class="button button__gradient__border d-none d-sm-inline-flex col-auto text-center" data-bs-toggle="modal" data-bs-target="#requestModal">
           Оставить заявку
         </button>
         <div class="col-lg-7">
           <div class="hero__mock">
             <img alt="image" class="w-100" src="src/images/courses/banner_1.webp">
           </div>
+            <button class="button button__gradient__border d-sm-none d-flex mt-4" data-bs-toggle="modal" data-bs-target="#requestModal">
+                Оставить заявку
+            </button>
         </div>
       </div>
     </div>
@@ -45,7 +48,7 @@
           <p class="tools__text">Для стабильного роста</p>
         </div>
       </div>
-      <div class="col-md-6">
+      <div class="col-md-6 mt-4 mt-md-0">
         <div class="block">
           <span class="tools__num" data-text="02">02</span>
           <p class="tools__text">Для развития онлайн-обучения</p>
@@ -68,7 +71,7 @@
           <li>Возможность размещать несколько сайтов в одном <br>аккаунте без доплат</li>
           <li>Проекты подходят для контекстной рекламы <br>и SEO-продвижения</li>
         </ul>
-        <button class="button button__gradient__border" data-bs-toggle="modal" data-bs-target="#requestModal">
+        <button class="button button__gradient__border d-none d-lg-flex" data-bs-toggle="modal" data-bs-target="#requestModal">
           Оставить заявку
         </button>
       </div>
@@ -76,6 +79,9 @@
         <div class="feature__mock">
           <img alt="image" class="w-100" src="src/images/courses/banner_2.webp">
         </div>
+          <button class="button button__gradient__border d-lg-none d-flex mt-4" data-bs-toggle="modal" data-bs-target="#requestModal">
+              Оставить заявку
+          </button>
       </div>
     </div>
   </section>
@@ -83,12 +89,15 @@
   <!-- COURSES -->
   <section class="feature container">
     <div class="row align-items-center d-flex align-content-center">
-      <div class="col-lg-6">
-        <div class="feature__mock pe-5">
+      <div class="col-lg-6 order-1 order-lg-0">
+        <div class="feature__mock pe-0 pe-lg-5">
           <img alt="image" class="w-100" src="src/images/courses/banner_3.webp">
         </div>
+          <button class="button button__gradient__border d-lg-none d-flex mt-4" data-bs-toggle="modal" data-bs-target="#requestModal">
+              Оставить заявку
+          </button>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 order-0 order-lg-1">
         <h2 class="section__title">Конструктор онлайн-курсов</h2>
         <p class="section__desc">
           Запускайте курсы, проводите консультации и вебинары в одном пространстве
@@ -99,7 +108,7 @@
           <li>Автоматически выдавайте сертификаты ученикам</li>
           <li>Используйте элементы геймификации для <br>повышения вовлечённости</li>
         </ul>
-        <button class="button button__gradient__border" data-bs-toggle="modal" data-bs-target="#requestModal">
+        <button class="button button__gradient__border d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#requestModal">
           Оставить заявку
         </button>
       </div>
@@ -114,12 +123,15 @@
         <p class="text">
           Настраивайте автоматические сценарии на каждом этапе воронки. Меньше ручной работы и потерянных лидов — больше выручки
         </p>
-        <button class="button button__gradient__border" data-bs-toggle="modal" data-bs-target="#requestModal">
+        <button class="button button__gradient__border d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#requestModal">
           Оставить заявку
         </button>
       </div>
       <div class="col-lg-5 feature__mock feature__mock--small">
-        <img alt="image" class="w-100" src="src/images/courses/banner_4.webp">
+        <img alt="image" class="w-100 image" src="src/images/courses/banner_4.webp">
+          <button class="button button__gradient__border d-lg-none d-flex mt-4" data-bs-toggle="modal" data-bs-target="#requestModal">
+              Оставить заявку
+          </button>
       </div>
     </div>
   </section>
@@ -128,7 +140,7 @@
   <section class="feature container">
     <div class="row align-items-center d-flex align-content-center align-items-stretch">
       <div class="col ps-0 d-flex">
-        <div class="col rounded-5 bg-white shadow-sm p-5">
+        <div class="col rounded-5 bg-white shadow-sm shadow-none p-md-5 p-0 no__style">
           <h2 class="section__title">Сервис для проведения вебинаров</h2>
           <p class="section__desc">
             Запускайте курсы, проводите консультации и вебинары в одном пространстве
@@ -139,15 +151,18 @@
             <li>Проведение живых эфиров и автоматических вебинаров</li>
             <li>Защита от скачивания и копирования. Ваш контент надежно защищен</li>
           </ul>
-          <button class="button button__gradient__border " data-bs-toggle="modal" data-bs-target="#requestModal">
+          <button class="button button__gradient__border  d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#requestModal">
             Оставить заявку
           </button>
         </div>
       </div>
-      <div class="col-lg-5 pe-0">
+      <div class="col-lg-5 pe-4 pe-md-0">
         <div class="feature__mock">
           <img alt="image" class="w-100 object-fit: contain" src="src/images/courses/banner_5.webp">
         </div>
+          <button class="button button__gradient__border d-lg-none d-flex mt-4" data-bs-toggle="modal" data-bs-target="#requestModal">
+              Оставить заявку
+          </button>
       </div>
     </div>
   </section>
@@ -155,13 +170,16 @@
   <!-- VIDEO -->
   <section class="feature container">
     <div class="row align-items-center d-flex align-content-center align-items-stretch">
-      <div class="col-lg-5 ps-0">
+      <div class="col-lg-5 ps-3 ps-lg-0 order-1 order-lg-0">
         <div class="feature__mock">
           <img alt="image" class="w-100 object-fit: contain" src="src/images/courses/banner_6.webp">
         </div>
+          <button class="button button__gradient__border d-lg-none d-flex mt-4" data-bs-toggle="modal" data-bs-target="#requestModal">
+              Оставить заявку
+          </button>
       </div>
-      <div class="col pe-0 d-flex">
-        <div class="col rounded-5 bg-white shadow-sm p-5">
+      <div class="col pe-0 d-flex order-0 order-lg-1">
+        <div class="col rounded-5 bg-white shadow-sm no__style p-5">
           <h2 class="section__title">Сервис видеосвязи для онлайн-школ и инфобизнеса</h2>
           <p class="section__desc">
             Проводите консультации, встречи, вебинары, курсы и мероприятия до 10 000 участников
@@ -171,7 +189,7 @@
             <li>Запись экрана без интерфейса и водяных знаков для комфортного просмотра</li>
             <li>Просмотр записей прямо на сайте — встроенный плеер уже включён</li>
           </ul>
-          <button class="button button__gradient__border" data-bs-toggle="modal" data-bs-target="#requestModal">
+          <button class="button button__gradient__border  d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#requestModal">
             Оставить заявку
           </button>
         </div>
@@ -187,11 +205,11 @@
         <p class="text">
           Отправляйте сообщения во всех каналах одним действием
         </p>
-        <button class="button button__gradient__border" data-bs-toggle="modal" data-bs-target="#requestModal">
+        <button class="button button__gradient__border d-md-flex d-none" data-bs-toggle="modal" data-bs-target="#requestModal">
           Оставить заявку
         </button>
       </div>
-      <div class="col-lg-5 feature__mock feature__mock--small">
+      <div class="col-lg-5 feature__mock feature__mock--small d-md-flex d-none">
         <img alt="image" class="w-100" src="src/images/courses/banner_7.webp">
       </div>
     </div>
@@ -202,18 +220,27 @@
         <li>Сегментируйте подписчиков по любым параметрам:<br> география, активность, пол и многое другое</li>
         <li>Анализируйте результаты рассылок и повышайте <br>их эффективность</li>
       </ul>
+        <div class="mobile__image d-md-none d-flex">
+            <img alt="image" class="w-100" src="src/images/courses/banner_7.webp">
+        </div>
+        <button class="button button__gradient__border d-md-none d-flex mt-3" data-bs-toggle="modal" data-bs-target="#requestModal">
+            Оставить заявку
+        </button>
     </div>
   </section>
 
   <!-- ANALYTICS -->
   <section class="feature container">
     <div class="row align-items-center d-flex align-content-center">
-      <div class="col-lg-6">
-        <div class="feature__mock pe-5">
+      <div class="col-lg-6 order-1 order-lg-0">
+        <div class="feature__mock pe-0 pe-lg-5">
           <img alt="image" class="w-100" src="src/images/courses/banner_8.webp">
         </div>
+          <button class="button button__gradient__border d-lg-none d-flex mt-4" data-bs-toggle="modal" data-bs-target="#requestModal">
+              Оставить заявку
+          </button>
       </div>
-      <div class="col-lg-6">
+      <div class="col-lg-6 order-0 order-lg-1">
         <h2 class="section__title">Аналитика продаж и обучения</h2>
         <p class="section__desc">
           Определяйте слабые места и находите новые точки роста
@@ -223,9 +250,9 @@
           <li>Аналитика first-click и last-click</li>
           <li>Готовый дашборд со статистикой продаж</li>
         </ul>
-        <button class="button button__gradient__border" data-bs-toggle="modal" data-bs-target="#requestModal">
-          Оставить заявку
-        </button>
+          <button class="button button__gradient__border d-none d-lg-inline-flex" data-bs-toggle="modal" data-bs-target="#requestModal">
+              Оставить заявку
+          </button>
       </div>
     </div>
   </section>
